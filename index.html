@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#161126">
+  <meta name="description" content="Privacy Policy for Frog File Viewer, a free offline Android file viewer, PDF editor, and converter by Frogdadday.">
+  <title>Frog File Viewer Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #100a20;
+      --card: rgba(22, 17, 38, .94);
+      --ink: #fff8fd;
+      --muted: #d9d0e8;
+      --rose: #ff495e;
+      --orange: #ffb22c;
+      --yellow: #ffe64d;
+      --green: #63e49a;
+      --turquoise: #29cae4;
+      --blue: #7074f6;
+      --violet: #bc58f3;
+      --magenta: #fc70c6;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background-color: var(--night);
+      background-image:
+        radial-gradient(circle at 12% 8%, rgba(255, 73, 94, .76), transparent 25rem),
+        radial-gradient(circle at 88% 10%, rgba(255, 178, 44, .70), transparent 24rem),
+        radial-gradient(circle at 94% 55%, rgba(41, 202, 228, .70), transparent 28rem),
+        radial-gradient(circle at 14% 72%, rgba(99, 228, 154, .62), transparent 27rem),
+        radial-gradient(circle at 68% 92%, rgba(188, 88, 243, .72), transparent 30rem),
+        conic-gradient(from 215deg at 48% 34%, #3e164b, #152f3f, #1c132e, #3e164b);
+      background-attachment: fixed;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-radial-gradient(ellipse at 45% 32%, transparent 0 28px, rgba(255,255,255,.035) 31px, transparent 38px);
+    }
+    main { position: relative; width: min(900px, calc(100% - 30px)); margin: 0 auto; padding: 46px 0 74px; }
+    header, .summary, .policy {
+      border: 1px solid rgba(255, 255, 255, .34);
+      background: var(--card);
+      box-shadow: 0 24px 70px rgba(5, 2, 16, .52), inset 0 1px 0 rgba(255, 255, 255, .14);
+      backdrop-filter: blur(18px);
+    }
+    header { padding: clamp(25px, 6vw, 50px); border-radius: 28px 28px 12px 12px; }
+    .eyebrow { margin: 0 0 10px; color: var(--yellow); font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+    h1 {
+      margin: 0;
+      color: transparent;
+      background: linear-gradient(90deg, var(--rose), var(--orange), var(--yellow), var(--green), var(--turquoise), var(--blue), var(--violet), var(--magenta));
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-size: clamp(2.35rem, 8vw, 4.65rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+      filter: drop-shadow(0 3px 14px rgba(252, 112, 198, .30));
+    }
+    .tagline { margin: 14px 0 0; color: var(--muted); font-size: 1.08rem; font-weight: 750; }
+    .summary { margin: 14px 0; padding: 22px clamp(20px, 5vw, 34px); border-radius: 12px; }
+    .summary p { margin: 0; font-size: 1.08rem; }
+    .policy { padding: clamp(24px, 6vw, 52px); border-radius: 12px 12px 28px 28px; }
+    .effective {
+      display: inline-block;
+      margin: 0 0 8px;
+      padding: 7px 14px;
+      color: #161126;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--yellow), var(--green), var(--turquoise));
+      font-weight: 900;
+    }
+    nav { margin: 20px 0 6px; }
+    nav a { display: inline-block; margin: 0 18px 10px 0; }
+    h2 { margin: 38px 0 9px; font-size: 1.48rem; line-height: 1.25; }
+    h2::after { content: ""; display: block; width: 74px; height: 4px; margin-top: 7px; border-radius: 5px; background: linear-gradient(90deg, var(--rose), var(--yellow), var(--green), var(--turquoise), var(--violet)); }
+    h2:first-of-type { margin-top: 24px; }
+    h3 { margin: 25px 0 6px; color: #fff; font-size: 1.13rem; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    li { margin: 9px 0; color: var(--muted); }
+    strong { color: #fff; }
+    a { color: var(--yellow); font-weight: 720; text-decoration-thickness: 2px; text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:hover { color: var(--turquoise); }
+    a:focus-visible { outline: 4px solid var(--yellow); outline-offset: 4px; border-radius: 4px; }
+    .promise { padding: 17px 19px; border-left: 5px solid var(--magenta); border-radius: 10px; background: rgba(252, 112, 198, .10); }
+    footer { margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.25); color: #c8bdd9; text-align: center; }
+    @media (max-width: 560px) {
+      :root { font-size: 17px; }
+      main { padding-top: 22px; }
+      header, .policy { border-radius: 18px; }
+      .policy { padding: 25px 20px 32px; }
+    }
+    @media (prefers-reduced-transparency: reduce) {
+      header, .summary, .policy { background: #161126; backdrop-filter: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Frogdadday</p>
+      <h1>Frog File Viewer</h1>
+      <p class="tagline">Privacy Policy · Free. Simple. Respectful.</p>
+    </header>
+
+    <section class="summary" aria-label="Short privacy summary">
+      <p><strong>The short version:</strong> your files stay on your device. Frog File Viewer has no ads, subscriptions, accounts, analytics, tracking, or in-app internet access. Frogdadday does not collect, sell, rent, or share your files or personal information.</p>
+    </section>
+
+    <article class="policy">
+      <p class="effective">Effective date: October 23, 2026</p>
+      <p>This Privacy Policy applies to the <strong>Frog File Viewer</strong> Android application (the “App”), provided by <strong>Frogdadday</strong> (the “Developer”).</p>
+      <nav aria-label="Policy sections">
+        <a href="#files">Your files</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#outside-services">Outside services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <h2>Our promise</h2>
+      <p class="promise"><strong>Free. Simple. Respectful.</strong> The App is 100% free. It contains no advertisements, subscriptions, paywalls, paid features, user accounts, analytics SDKs, advertising identifiers, profiling, or user tracking. Optional support never unlocks features or changes access.</p>
+
+      <section id="files">
+        <h2>Files you choose</h2>
+        <p>The App reads only files you deliberately select through Android's file picker. Depending on what you choose, those files may contain personal or sensitive information. Viewing, PDF editing, and conversion happen locally on your device. The App does not upload file names or contents to the Developer or to a Frogdadday server.</p>
+        <p>Supported previews may include PDF, Office documents, text and markup shown as non-executed text, images, audio, and video. Audio and video players receive local file paths only. Unsupported files or codecs produce an error instead of being sent elsewhere.</p>
+
+        <h3>Saving and temporary copies</h3>
+        <p>When you save or convert a file, Android's file picker lets you choose the destination. The App creates a copy and does not replace the original file in place.</p>
+        <p>Some picked media requires a bounded temporary copy in the App's cache so Android can play it. App-owned preview copies are removed after the viewer closes. Your chosen saved outputs remain where you put them until you delete them.</p>
+
+        <h3>Unsaved PDF recovery</h3>
+        <p>To protect unsaved PDF edits if Android interrupts the App, Frog File Viewer may keep one recovery copy in private app storage. It stays on the device, is replaced as editing continues, expires automatically after 24 hours, and is removed after you save or discard the work.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>Internet and Android permissions</h2>
+        <p>The distributed release App does not have Android's Internet permission or network-state permission and cannot make in-app internet requests. It does not request broad access to your storage. Android's system file picker grants access only to files you choose.</p>
+        <p>The bundled local media player may keep the processor awake during playback so audio or video is not interrupted when the screen changes state. This does not provide access to personal information or a network.</p>
+        <p>Development-only debug builds may include Flutter's Internet permission for hot reload and debugging. Those developer builds are not the Google Play release described by this policy.</p>
+      </section>
+
+      <h2>Advertising, analytics, and tracking</h2>
+      <p>The App contains no advertising, analytics, crash-reporting, profiling, social-media, or third-party tracking SDKs. It does not use cookies, fingerprinting, or create a user profile.</p>
+
+      <h2>Retention, deletion, and device backups</h2>
+      <p>The Developer has no remote copy of your files or activity and cannot view, recover, or remotely delete information on your phone. You can delete exported files using your chosen file app. Clearing the App's storage or uninstalling removes App-private data under Android's normal behavior.</p>
+      <p>Android, your device manufacturer, or a storage provider you select may include files or App data in backups or device transfers according to your settings and that provider's privacy terms. Frogdadday does not control those services.</p>
+
+      <section id="outside-services">
+        <h2>Privacy page, support, and outside services</h2>
+        <p>The <strong>Privacy policy</strong> and optional <strong>Buy Me a Coffee</strong> buttons ask Android to open a webpage in your external browser only after you press them. The App itself does not load either website.</p>
+        <p>This policy page is hosted by GitHub Pages. GitHub may process connection and usage information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. This page contains no added analytics, advertisements, cookies, forms, external assets, or tracking scripts.</p>
+        <p>If you choose Buy Me a Coffee, that service and your browser may process connection, payment, and supporter information under their own policies. Support is never required and never unlocks features. The App does not receive payment information.</p>
+        <p>Google Play, Android, your device manufacturer, file providers, and other apps you open at your request may independently process information needed to provide their services under their own terms and privacy policies.</p>
+      </section>
+
+      <h2>Security</h2>
+      <p>The App uses Android's app isolation, system file picker, private storage, and bounded file-processing limits. No storage method can guarantee absolute security. Keep your device protected and install operating-system security updates when available.</p>
+
+      <h2>Children's privacy</h2>
+      <p>The App does not transmit personal information to the Developer from any user, including children. It has no account, chat, public profile, or in-app sharing service.</p>
+
+      <h2>Direct communications</h2>
+      <p>If you contact the Developer outside the App, the Developer receives only the information you choose to provide. It is used to respond, is not sold, and is kept only as long as reasonably necessary for the inquiry or applicable legal obligations. Do not send private documents unless they are necessary for your question.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If the App's features or privacy practices change, this page will be updated with a new effective date before the changed version is released.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Questions about this policy may be directed through the <a href="https://github.com/frogdadday">Frogdadday developer profile on GitHub</a> or the public <a href="https://github.com/frogdadday/Frog-File-Viewer-Privacy-Policy/issues">policy repository's issue tracker</a>.</p>
+
+      <footer>
+        Frog File Viewer · No catch. Just a free app made to be useful.<br>
+        <a href="https://github.com/frogdadday">Developer profile on GitHub</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
